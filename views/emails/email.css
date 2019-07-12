@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+a {
+    margin-top: 2rem;
+    text-align: center;
+    display: block;
+    padding: 1.5rem 0;
+    color:black;
+    background-color: #fdd835;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}

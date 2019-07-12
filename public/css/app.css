@@ -1,0 +1,336 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+}
+/** Login **/
+.login,
+.crear-cuenta {
+    background: #455A64;
+}
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.contenedor-formulario h1 {
+    text-align: center;
+    color: white;
+}
+.contenedor-formulario h1  span{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.contenedor-formulario p {
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+}
+.caja-login {
+    background-color: #F2F2F2;
+    border: 1px solid #707070;
+    max-width: 650px;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 300px;
+    -webkit-box-shadow: 0px 25px 35px -17px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 25px 35px -17px rgba(0,0,0,0.56);
+    box-shadow: 0px 25px 35px -17px rgba(0,0,0,0.56);
+    padding: 3rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.campo label {
+    flex: 0 0 100px;
+    text-align: right;
+    padding-right: 1rem;
+}
+.campo input[type="email"],
+.campo input[type="text"],
+.campo input[type="password"] {
+    height: 3rem;
+    border: 0;
+    flex: 1;
+    border: 1px solid #455A64;
+    border-radius: 5rem;
+    padding-left: 2rem;
+    color: black;
+}
+.campo.acciones {
+    justify-content: space-between;
+}
+.enviar {
+   justify-content: flex-end;
+}
+.boton {
+    background-color: #FDD835;
+    text-align: center;
+    transition: background-color .5s ease-in-out;
+    padding: 2rem;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 900;
+    width: 250px;
+    margin:0  auto;
+
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+.boton span {
+    font-size: 2.2rem;
+    margin-left: 20px;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: rgb(219, 184, 29)!important;
+}
+.boton.eliminar {
+    margin-top: 1rem;
+    float: right;
+    background-color: red!important;
+    color: white;
+}
+.campo a {
+    color: black;
+    text-decoration: none;
+}
+
+/** Barra **/
+body.index {
+    height: 100vh;
+}
+.barra {
+    background-color: #455A64;
+    padding: 1rem;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra h1 {
+    color: white;
+    margin:0;
+    font-size: 1.4rem;
+}
+.barra a {
+    color: white;
+    text-decoration: none;
+}
+/*** sidebar**/
+.contenedor-proyectos {
+    height: 100%;
+    max-width: 300px;
+    background-color: #607D8B;
+    padding-top: 1rem;
+}
+.panel {
+    padding: 1rem;
+    margin: 1rem;
+}
+.panel a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.panel h2 {
+    color: #FDD835;
+    font-weight: 900;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.crear-proyecto i {
+    margin-left: 1rem;
+}
+.crear-proyecto a {
+    color: #455A64;
+}
+
+.lista-proyectos ul{
+    list-style: none;
+    padding: 1.5rem 0 0 0;
+    margin: 0;
+}
+.lista-proyectos ul li {
+    margin-bottom: 1rem;
+}
+.lista-proyectos ul li a:hover {
+    color: #FDD835;
+}
+/** Contenido Principal */
+.contenedor {
+    display: flex;
+    height: calc( 100vh - 60px);
+}
+.contenido-principal {
+    flex: 1;
+    padding: 1rem;
+    overflow: scroll;
+}
+.contenido-principal h1,
+.contenido-principal h2 {
+    text-align: center;
+}
+.contenido-principal h1 {
+    font-size: 1.8rem;
+}
+.contenido-principal h2 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+.contenido-principal h1 span {
+    font-weight: 400;
+}
+.agregar-tarea {
+    max-width: 800px;
+    width: 90%;
+    background-color: #607D8B;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+    transition: background-color .5s ease-in-out;
+}
+
+/** Listado Pendientes **/
+.listado-pendientes {
+    background-color: #F2F2F2;
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    padding: 2rem;
+    border: 1px solid #999;
+}
+.listado-pendientes ul {
+    padding: 0;
+    list-style: none;
+}
+.listado-pendientes ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #d1d1d1;
+}
+.listado-pendientes ul li:last-of-type {
+    border-bottom: none;
+}
+.listado-pendientes ul li i {
+    cursor: pointer;
+}
+.acciones i:last-child{
+    margin-left: 3rem;
+}
+.completo {
+    color: #00B762;
+}
+.alerta {
+    padding: .5rem;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 900;
+    max-width: 300px;
+    margin: 0 auto 1rem auto;
+    text-transform: uppercase;
+}
+.error {
+    color: red!important;
+    background-color: rgb(255, 201, 201);
+    border: 1px solid red;
+}
+.error p {
+    color: red!important;
+}
+.correcto {
+    color: green;
+    background-color: rgb(201, 245, 201);
+    border: 1px solid green;
+}
+.correcto p {
+    color: green;
+}
+
+/** Linea de Avance **/
+.barra-avance {
+    height: 30px;
+    border: 1px solid #999;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+.porcentaje {
+    width: 0%;
+    height: 100%;
+    background-color: #00B762;
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    transition: width .3s ease;
+}
+
+form.agregar-proyecto {
+    max-width: 800px;
+    width: 90%;
+    background-color: #607D8B;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+    transition: background-color .5s ease-in-out;
+}
+form.agregar-proyecto label,
+form.agregar-proyecto input {
+    display: block;
+}
+form.agregar-proyecto label {
+    flex: 0 0 150px;
+    text-align: right;
+    padding-right: 1rem;
+}
+form.agregar-proyecto input[type="text"]{
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+    border: 1px solid #455A64;
+    border-radius: 5rem;
+    color: black;
+}
+form input[type="submit"]{
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+    padding: 1.5rem;
+    color: black;
+    width: auto;
+    margin: 0;
+}
+
+.contenedor-acciones {
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-acciones .boton:first-of-type{
+    color: black;
+    text-decoration: none;
+}
+.contenedor-acciones .boton.eliminar {
+    color: white;
+}
+.contenedor-acciones .boton {
+    margin: 0;
+    text-align: center;
+    display: block;
+}
